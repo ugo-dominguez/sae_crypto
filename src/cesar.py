@@ -1,7 +1,7 @@
-from utils import index_to_alpha, alpha_to_index
+from utils import alpha_to_index, index_to_alpha
 
 
-def cesar(char: str, incr: int):
+def cesar(char: str, incr: int) -> str:
     if char.isalpha():
         return index_to_alpha((alpha_to_index(char) + incr) % 26)
     
